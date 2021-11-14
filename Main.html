@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        
+        .header {
+            padding: 20px;
+            text-align: center;
+            background: rgb(63, 209, 253);
+            color: rgb(0, 0, 0);
+        }
+        
+        .header h1 {
+            font-size: 40px;
+        }
+        
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        
+        .navbar a.right {
+            float: right;
+        }
+        
+        .navbar button:hover {
+            background-color: rgb(117, 60, 60);
+            color: black;
+        }
+        
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+        
+        .side {
+            -ms-flex: 30%;
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        
+        .main {
+            -ms-flex: 70%;
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+        
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+        
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: rgb(0, 0, 0);
+        }
+        
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>My Pagina</h1>
+        <p>Una Pagina creada por Gabriel Nicolas Martinez</p>
+    </div>
+    <div class="navbar">
+        <a href="https://github.com/GabrielNicolasMartinez">Github</a>
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+    </div>
+    <div class="row">
+        <div class="side">
+            <h2>Sobre mi:</h2>
+            <h5>Soy Gabriel Nicolas Martinez, No trabajo</h5>
+            </br>
+            <h3>Projectos:</h3>
+            <p>TatuQuiz:</p>
+            <p>Aplicación web desarrollada por alumnos de la segunda etapa del Informatorio 202</p>
+            <a href="https://www.youtube.com/watch?v=JPI-o6_pIU8">Video de Demo</a><br>
+            <a href="https://github.com/OvaR82/TatuQuiz">Ir al Repo</a><br><br>
+            <img src="projectImage.png" style="height:200px;"></img><br>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h2></h2>
+    </div>
+
+</body>
+
+</html>
